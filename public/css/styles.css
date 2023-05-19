@@ -19,4 +19,36 @@ body {
     font-size: var(var(--font-size-base));
     background-color:#faf5ee;
     background-image: url("/img/img-noise-361x370.png");
+    margin: 0
 }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-base);
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.7rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: var(--black);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    padding: 10px 16px;
+    background-color: var(--red);
+}
+
