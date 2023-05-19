@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
+
+
+:root {
+    --black: #1c1c1c;
+    --gray: #7e7e7e;
+    --gray-light: #e4e4e4;
+    --red: #b30000;
+    --font-size-base: 1rem;
+    --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --border-radius: 10px;
+}
+
 body {
-    background-color: goldenrod;
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: var(var(--font-size-base));
+    background-color:#faf5ee;
+    background-image: url("/img/img-noise-361x370.png");
 }
