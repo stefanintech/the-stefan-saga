@@ -1,4 +1,6 @@
 # <a target="_blank" href="#">The Stefan Blog</a> 📖
+A blog showcasing many different types of stories!
+
 <img src="#" alt="Image inserted here">
 
 ## Lessons Learned 💭
