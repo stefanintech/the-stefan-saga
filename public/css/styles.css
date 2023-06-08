@@ -75,3 +75,28 @@ img {
     overflow: hidden;
     border-radius: var(--border-radius);
 }
+
+/* Main Header */
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 10px;
+    grid-template-areas: 
+    "logo button"
+    "menu menu"
+    
+    ;
+}
+
+.header_logo {
+    grid-template-areas: logo;
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header_logo:hover {
+    text-decoration: underline;
+}
