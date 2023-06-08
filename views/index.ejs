@@ -8,23 +8,19 @@
 <section class="articles">
     <h2 class="articles_heading">Recent Posts</h2>
 
+
+    
+     
+    
     <ul class="article_ul">
+        <% data.forEach(post => { %>
         <li>
-            <a href="#">
-                <span>Post Title</span>
-                <span class="article-list_date">Date</span>
+            <a href="/post/<% post._id %>">
+                <span><% post.title %></span>
+                <span class="article-list_date"><% post.createdAt.toDateString() %></span>
             </a>
         </li>
-
-        <li>
-            <a href="#">
-                <span>Post Title</span>
-                <span class="article-list_date">Date</span>
-            </a>
-        </li>
+        <% }) %>
     </ul>
-
-
-
     <a href="#" class="pagination">&lt; Read more posts</a>
 </section>
