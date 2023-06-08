@@ -86,12 +86,19 @@ img {
     grid-template-areas: 
     "logo button"
     "menu menu"
-    
     ;
 }
 
+@media only screen and (min-width: 768px) {
+    .header {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+        "logo menu button";
+    }
+}
+
 .header_logo {
-    grid-template-areas: logo;
+    grid-area: logo;
     font-weight: 800;
     font-size: 25px;
     text-decoration: none;
@@ -99,4 +106,55 @@ img {
 
 .header_logo:hover {
     text-decoration: underline;
+}
+
+.header_nav {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+}
+
+.header_button {
+    grid-area: button;
+    display: flex;
+    justify-content: end;
+
+}
+
+.header_button button {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    border: 0;
+    padding: 6px 12px;
+    background: none;
+    border-radius: var(--font-size-base);
+    font-weight: 600;
+    color: var(--black);
+}
+
+.header_button button:hover {
+    border: 2px solid var(--black);
+}
+
+/* Header -> Navigation */
+.header_nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.header_nav ul a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header_nav ul a:hover {
+    text-decoration: underline;
+}
+
+.header_nav ul a:active {
+    color: var(--gray);
 }
