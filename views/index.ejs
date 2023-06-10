@@ -7,10 +7,6 @@
 
 <section class="articles">
     <h2 class="articles_heading">Recent Posts</h2>
-
-
-    
-     
     
     <ul class="article_ul">
         <% data.forEach(post => { %>
@@ -22,5 +18,10 @@
         </li>
         <% }) %>
     </ul>
-    <a href="#" class="pagination">&lt; Read more posts</a>
+
+    <% if (nextPage !== null) { %>
+        <a href="/?page=<%= nextPage %>" class="pagination">&lt; Read more posts</a>
+    <% } %>
+
+    
 </section>
