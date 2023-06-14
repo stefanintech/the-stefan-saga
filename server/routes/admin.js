@@ -18,6 +18,7 @@ const authMiddleware = (req, res, next ) => {
 
   if(!token) {
     return res.status(401).json( { message: 'Unauthorized'} );
+    // lets render a new page for this
   }
 
   try {
@@ -26,6 +27,7 @@ const authMiddleware = (req, res, next ) => {
     next();
   } catch(error) {
     res.status(401).json( { message: 'Unauthorized'} );
+    // lets render a new page for this
   }
 }
 
