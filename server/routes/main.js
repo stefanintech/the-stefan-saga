@@ -30,7 +30,8 @@ router.get('', async (req,res) => {
             locals, 
             data,
             current: page,
-            nextPage: hasNextPage ? nextPage : null
+            nextPage: hasNextPage ? nextPage : null,
+            currentRoute: '/'
         });
         
         
@@ -108,7 +109,9 @@ router.post('/search', async (req, res) => {
 
 
 router.get('/about', (req,res) => {
-    res.render('about')
+    res.render('about', {
+      currentRoute: '/about'
+    })
 })
 
 router.get('/contact', (req,res) => {

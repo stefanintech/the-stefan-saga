@@ -6,22 +6,27 @@
 <img src="https://placehold.co/981x528" alt="placeholder image" width="981" height="528" class="hero-image">
 
 <section class="articles">
-    <h2 class="articles_heading">Recent Posts</h2>
-    
-    <ul class="article_ul">
-        <% data.forEach(post => { %>
+    <h2 class="articles__heading">Latest Posts</h2>
+  
+    <ul class="article-ul">
+      <% data.forEach(post => { %>
         <li>
-            <a href="/post/<% post._id %>">
-                <span><% post.title %></span>
-                <span class="article-list_date"><% post.createdAt.toDateString() %></span>
-            </a>
+          <a href="/post/<%= post._id %>">
+            <span><%= post.title %></span>
+            <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+          </a>
         </li>
-        <% }) %>
+      <% }) %>
     </ul>
-
+  
+  
     <% if (nextPage !== null) { %>
-        <a href="/?page=<%= nextPage %>" class="pagination">&lt; Read more posts</a>
+      <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
     <% } %>
-
+   
+  
     
-</section>
+  
+  
+  
+  </section>
