@@ -91,7 +91,7 @@ img {
 /* Main Header */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 50px;
 }
 
@@ -289,11 +289,10 @@ img {
 }
 
 .footer {
-    font-size: 25px;
-    margin: 4rem;
-    text-align: center;
     display: flex;
     justify-content: space-between;
+    font-size: 25px;
+    margin-top: 6rem;
     
 }
 
